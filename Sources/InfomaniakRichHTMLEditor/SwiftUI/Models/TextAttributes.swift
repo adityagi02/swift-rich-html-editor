@@ -18,16 +18,16 @@ import SwiftUI
 /// The properties are read-only and are automatically updated by the editor.
 /// If you want to update the style, you should use the available functions.
 public final class TextAttributes: ObservableObject {
-    @Published public private(set) var hasBold = false
-    @Published public private(set) var hasItalic = false
-    @Published public private(set) var hasUnderline = false
-    @Published public private(set) var hasStrikethrough = false
-    @Published public private(set) var hasSubscript = false
-    @Published public private(set) var hasSuperscript = false
-    @Published public private(set) var hasOrderedList = false
-    @Published public private(set) var hasUnorderedList = false
+    @Published public private(set) var hasBold = true
+    @Published public private(set) var hasItalic = true
+    @Published public private(set) var hasUnderline = true
+    @Published public private(set) var hasStrikethrough = true
+    @Published public private(set) var hasSubscript = true
+    @Published public private(set) var hasSuperscript = true
+    @Published public private(set) var hasOrderedList = true
+    @Published public private(set) var hasUnorderedList = true
 
-    @Published public private(set) var hasLink = false
+    @Published public private(set) var hasLink = true
     @Published public private(set) var textJustification: TextJustification?
 
     @Published public private(set) var fontName = ""
